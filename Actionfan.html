@@ -12,7 +12,7 @@
         h1 { margin: 0; font-size: 24px; color: #ff4d4d; text-transform: uppercase; letter-spacing: 2px; }
         .main-container { padding: 30px 20px; max-width: 1000px; margin: 0 auto; }
 
-        /* Back Button (อัปเกรดไซส์กลาง + แก้บั๊กกดไม่ไป) */
+        /* Back Button */
         .back-btn {
             display: inline-block;
             padding: 10px 20px; /* ขยายกรอบปุ่ม */
@@ -31,16 +31,16 @@
         /* Category Header */
         .category-header { font-size: 20px; font-weight: bold; text-transform: uppercase; border-left: 4px solid #f2e205; padding-left: 12px; margin-top: 10px; margin-bottom: 30px; letter-spacing: 1px; }
 
-        /* Manga Grid Layout (เพิ่มระยะห่างระหว่างเรื่อง) */
+        /* Manga Grid Layout */
         .manga-row {
             display: flex;
             flex-wrap: wrap;
-            gap: 40px; /* ขยายระยะห่างจาก 20 เป็น 40 */
+            gap: 40px; 
         }
 
-        /* Card Style (ขยายขนาดเรื่องให้ใหญ่บึ้ม!) */
+        /* Card Style */
         .manga-card {
-            width: 240px; /* ขยายความกว้าง */
+            width: 240px; 
             text-decoration: none;
             color: #ffffff;
             transition: transform 0.2s ease;
@@ -50,8 +50,8 @@
         /* Cover Image Box */
         .cover-box {
             position: relative; 
-            width: 240px; /* กว้างเท่า card */
-            height: 350px; /* ขยายความสูงให้สมส่วน */
+            width: 240px; 
+            height: 350px; 
             border: 1px solid #333;
             border-radius: 6px;
             overflow: hidden;
@@ -59,7 +59,7 @@
         }
         .cover-box img { width: 100%; height: 100%; object-fit: cover; }
 
-        /* Badges over Cover (ขยายขึ้นมานิดนึงให้สมดุลกับปกที่ใหญ่ขึ้น) */
+        /* Badges over Cover */
         .badge-container { position: absolute; top: 6px; left: 6px; display: flex; flex-direction: column; align-items: flex-start; gap: 3px; z-index: 10; }
         .badge { font-size: 9px; font-weight: bold; text-transform: uppercase; padding: 3px 5px; border-radius: 3px; color: #fff; line-height: 1; }
         .badge-type { background-color: rgba(0, 0, 0, 0.75); border: 1px solid #555; }
@@ -92,7 +92,7 @@
                         <span class="badge badge-type">Serialized Manga</span>
                         <span class="badge badge-status">Ongoing</span>
                     </div>
-                    <img src="images/cover.PNG" alt="Everstain War">
+                    <img src="images/cover.png" alt="Everstain War">
                 </div>
                 <div class="manga-info">
                     <div class="manga-title">Everstain War</div>
