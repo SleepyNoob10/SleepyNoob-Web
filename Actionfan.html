@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Fantasy - SleepyNoob</title>
+    <style>
+        /* Base Reset */
+        body { background-color: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #000000; padding: 20px 0; text-align: center; border-bottom: 2px solid #ff4d4d; }
+        header a { text-decoration: none; }
+        h1 { margin: 0; font-size: 24px; color: #ff4d4d; text-transform: uppercase; letter-spacing: 2px; }
+        .main-container { padding: 30px 20px; max-width: 1000px; margin: 0 auto; }
+
+        /* Back Button (อัปเกรดไซส์กลาง + แก้บั๊กกดไม่ไป) */
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px; /* ขยายกรอบปุ่ม */
+            font-size: 15px; /* ขยายตัวหนังสือ */
+            background-color: #1a1a1a;
+            color: #ddd;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 1px solid #333;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-bottom: 20px;
+        }
+        .back-btn:hover { background-color: #ff4d4d; color: #fff; border-color: #ff4d4d; }
+
+        /* Category Header */
+        .category-header { font-size: 20px; font-weight: bold; text-transform: uppercase; border-left: 4px solid #f2e205; padding-left: 12px; margin-top: 10px; margin-bottom: 30px; letter-spacing: 1px; }
+
+        /* Manga Grid Layout (เพิ่มระยะห่างระหว่างเรื่อง) */
+        .manga-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px; /* ขยายระยะห่างจาก 20 เป็น 40 */
+        }
+
+        /* Card Style (ขยายขนาดเรื่องให้ใหญ่บึ้ม!) */
+        .manga-card {
+            width: 240px; /* ขยายความกว้าง */
+            text-decoration: none;
+            color: #ffffff;
+            transition: transform 0.2s ease;
+        }
+        .manga-card:hover { transform: translateY(-5px); }
+
+        /* Cover Image Box */
+        .cover-box {
+            position: relative; 
+            width: 240px; /* กว้างเท่า card */
+            height: 350px; /* ขยายความสูงให้สมส่วน */
+            border: 1px solid #333;
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: #1a1a1a;
+        }
+        .cover-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Badges over Cover (ขยายขึ้นมานิดนึงให้สมดุลกับปกที่ใหญ่ขึ้น) */
+        .badge-container { position: absolute; top: 6px; left: 6px; display: flex; flex-direction: column; align-items: flex-start; gap: 3px; z-index: 10; }
+        .badge { font-size: 9px; font-weight: bold; text-transform: uppercase; padding: 3px 5px; border-radius: 3px; color: #fff; line-height: 1; }
+        .badge-type { background-color: rgba(0, 0, 0, 0.75); border: 1px solid #555; }
+        .badge-status { background-color: #f2e205; color: #000; }
+
+        /* Text Below Cover */
+        .manga-info { margin-top: 15px; text-align: center; }
+        .manga-title { font-size: 16px; font-weight: bold; margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>SleepyNoob</h1>
+        </a>
+    </header>
+
+    <div class="main-container">
+
+        <a href="everstainwar.html" class="back-btn">← Back</a>
+
+        <div class="category-header">Action Fantasy</div>
+        
+        <div class="manga-row">
+            
+            <a href="everstainwar.html" class="manga-card">
+                <div class="cover-box">
+                    <div class="badge-container">
+                        <span class="badge badge-type">Serialized Manga</span>
+                        <span class="badge badge-status">Ongoing</span>
+                    </div>
+                    <img src="images/cover.PNG" alt="Everstain War">
+                </div>
+                <div class="manga-info">
+                    <div class="manga-title">Everstain War</div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

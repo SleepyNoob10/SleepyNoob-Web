@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1 - Everstain War</title>
+    <style>
+        /* Base Reset */
+        body { background-color: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        
+        /* 1. Top Header */
+        header { background-color: #000000; padding: 20px 0; text-align: center; border-bottom: 2px solid #ff4d4d; }
+        header a { text-decoration: none; }
+        h1 { margin: 0; font-size: 24px; color: #ff4d4d; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* 2. Sticky Author Bar (แถบนักวาดติดหนึบ) */
+        .sticky-author-bar {
+            position: sticky;
+            top: 0; 
+            background-color: rgba(17, 17, 17, 0.95);
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid #333;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .sticky-author-bar:hover { background-color: #222; }
+        .author-mini-avatar { width: 35px; height: 35px; border-radius: 50%; object-fit: cover; border: 2px solid #f2e205; margin-right: 12px; }
+        .author-mini-name { font-size: 14px; font-weight: bold; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
+        .author-mini-hint { font-size: 11px; color: #aaa; margin-left: 8px; }
+
+        /* 3. Manga Reader Container */
+        .reader-container {
+            max-width: 900px; /* ใช้ขนาด 900px ตามที่แกตั้งไว้เดิม กำลังสวยเลย */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* รูปมังงะ (ต่อกันไร้รอยต่อ) */
+        .manga-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+        }
+
+        /* 4. Bottom Navigation */
+        .bottom-nav {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px 20px 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .nav-btn {
+            flex: 1;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.2s;
+            text-transform: uppercase;
+        }
+        .btn-hub { background-color: #1a1a1a; color: #ddd; border: 1px solid #333; }
+        .btn-hub:hover { background-color: #333; color: #fff; }
+        .btn-next { background-color: #ff4d4d; color: #fff; }
+        .btn-next:hover { background-color: #e60000; transform: translateY(-2px); }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>SleepyNoob</h1>
+        </a>
+    </header>
+
+    <a href="author.html" class="sticky-author-bar">
+        <img src="images/Profile.jpg" alt="SleepyNoob" class="author-mini-avatar">
+        <span class="author-mini-name">SleepyNoob</span>
+        <span class="author-mini-hint">Tap to view profile ➔</span>
+    </a>
+
+    <div class="reader-container">
+        <img src="images/ch1-01.jpg" class="manga-img">
+        <img src="images/ch1-02.jpg" class="manga-img">
+        <img src="images/ch1-03.jpg" class="manga-img">
+        <img src="images/ch1-04.jpg" class="manga-img">
+        <img src="images/ch1-05.jpg" class="manga-img">
+        <img src="images/ch1-06.jpg" class="manga-img">
+        <img src="images/ch1-07.jpg" class="manga-img">
+        <img src="images/ch1-08.jpg" class="manga-img">
+        <img src="images/ch1-09.jpg" class="manga-img">
+        <img src="images/ch1-10.jpg" class="manga-img">
+        <img src="images/ch1-11.jpg" class="manga-img">
+        <img src="images/ch1-12.jpg" class="manga-img">
+        <img src="images/ch1-13.jpg" class="manga-img">
+        <img src="images/ch1-14.jpg" class="manga-img">
+        <img src="images/ch1-15.jpg" class="manga-img">
+        <img src="images/ch1-16.jpg" class="manga-img">
+        <img src="images/ch1-17.jpg" class="manga-img">
+        <img src="images/ch1-18.jpg" class="manga-img">
+        <img src="images/ch1-19.jpg" class="manga-img">
+        <img src="images/ch1-20.jpg" class="manga-img">
+        <img src="images/ch1-21.jpg" class="manga-img">
+        <img src="images/ch1-22.jpg" class="manga-img">
+        <img src="images/ch1-23.jpg" class="manga-img">
+        <img src="images/ch1-24.jpg" class="manga-img">
+        <img src="images/ch1-25.jpg" class="manga-img">
+        <img src="images/ch1-26.jpg" class="manga-img">
+        <img src="images/ch1-27.jpg" class="manga-img">
+        <img src="images/ch1-28.jpg" class="manga-img">
+        <img src="images/ch1-29.jpg" class="manga-img">
+        <img src="images/ch1-30.jpg" class="manga-img">
+        <img src="images/ch1-31.jpg" class="manga-img">
+        <img src="images/ch1-32.jpg" class="manga-img">
+        <img src="images/ch1-33.jpg" class="manga-img">
+        <img src="images/ch1-34.jpg" class="manga-img">
+        <img src="images/ch1-35.jpg" class="manga-img">
+        <img src="images/ch1-36.jpg" class="manga-img">
+        <img src="images/ch1-37.jpg" class="manga-img">
+        <img src="images/ch1-38.jpg" class="manga-img">
+        <img src="images/ch1-39.jpg" class="manga-img">
+        <img src="images/ch1-40.jpg" class="manga-img">
+        <img src="images/ch1-41.jpg" class="manga-img">
+        <img src="images/ch1-42.jpg" class="manga-img">
+        <img src="images/ch1-43.jpg" class="manga-img">
+        <img src="images/ch1-44.jpg" class="manga-img">
+        <img src="images/ch1-45.jpg" class="manga-img">
+        <img src="images/ch1-46.jpg" class="manga-img">
+    </div>
+
+    <div class="bottom-nav">
+        <a href="everstainwar.html" class="nav-btn btn-hub">☰ Series List</a>
+        <a href="chapter2.html" class="nav-btn btn-next">Next Chapter ➔</a>
+    </div>
+
+</body>
+</html>

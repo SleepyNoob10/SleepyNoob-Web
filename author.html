@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleepyNoob - Author Profile</title>
+    <style>
+        /* Base Reset */
+        body { background-color: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #000000; padding: 20px 0; text-align: center; border-bottom: 2px solid #ff4d4d; }
+        header a { text-decoration: none; }
+        h1 { margin: 0; font-size: 24px; color: #ff4d4d; text-transform: uppercase; letter-spacing: 2px; }
+        .main-container { padding: 30px 20px; max-width: 900px; margin: 0 auto; }
+
+        /* Back Button (แก้ให้กดกลับไปหน้าผลงานได้เลย) */
+        .back-btn {
+            display: inline-block; padding: 10px 20px; font-size: 15px; background-color: #1a1a1a;
+            color: #ddd; text-decoration: none; border-radius: 6px; border: 1px solid #333;
+            font-weight: bold; transition: 0.2s; margin-bottom: 30px;
+        }
+        .back-btn:hover { background-color: #ff4d4d; color: #fff; border-color: #ff4d4d; }
+
+        /* --- Profile Header Section --- */
+        .profile-header {
+            display: flex; align-items: center; gap: 25px; margin-bottom: 30px;
+            background-color: #111; padding: 30px; border-radius: 12px; border: 1px solid #222;
+        }
+        .profile-avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #f2e205; }
+        .profile-info { flex-grow: 1; }
+        .profile-name { font-size: 28px; margin: 0 0 5px 0; color: #fff; }
+        .profile-role { font-size: 14px; color: #ff4d4d; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
+        
+        /* Bio */
+        .bio-text { font-size: 14px; color: #ccc; line-height: 1.6; }
+
+        /* --- Social Links (วาร์ป) --- */
+        .social-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+        .social-btn { 
+            padding: 8px 20px; border-radius: 6px; font-size: 12px; font-weight: bold; 
+            text-decoration: none; color: white; transition: 0.2s; text-transform: uppercase;
+        }
+        .social-btn:hover { opacity: 0.8; transform: translateY(-2px); }
+        .btn-ig { background-color: #E1306C; }
+        .btn-fb { background-color: #1877F2; }
+        .btn-yt { background-color: #FF0000; }
+        .btn-dc { background-color: #5865F2; }
+
+        /* --- Genres Section --- */
+        .section-title { font-size: 18px; font-weight: bold; text-transform: uppercase; border-left: 4px solid #ff4d4d; padding-left: 12px; margin-bottom: 20px; letter-spacing: 1px; }
+        .genre-box { background-color: #1a1a1a; padding: 20px; border-radius: 8px; border: 1px solid #333; margin-bottom: 40px; }
+        .genre-group { margin-bottom: 15px; }
+        .genre-group:last-child { margin-bottom: 0; }
+        .genre-label { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; display: block; }
+        
+        .tag { 
+            display: inline-block; background-color: #333; color: #fff; font-size: 12px; 
+            padding: 6px 14px; border-radius: 15px; text-transform: uppercase; margin-right: 8px; margin-bottom: 8px; font-weight: bold;
+            text-decoration: none; transition: 0.2s; /* เพิ่ม transition ให้ปุ่มสมูท */
+        }
+        .tag:hover { background-color: #ff4d4d; }
+
+        /* --- Works / Portfolio Section --- */
+        .manga-row { display: flex; flex-wrap: wrap; gap: 30px; }
+        .manga-card { width: 200px; text-decoration: none; color: #ffffff; transition: transform 0.2s ease; }
+        .manga-card:hover { transform: translateY(-5px); }
+        .cover-box { position: relative; width: 200px; height: 290px; border: 1px solid #333; border-radius: 6px; overflow: hidden; background-color: #1a1a1a; }
+        .cover-box img { width: 100%; height: 100%; object-fit: cover; }
+        .manga-info { margin-top: 15px; text-align: center; }
+        .manga-title { font-size: 16px; font-weight: bold; margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>SleepyNoob</h1>
+        </a>
+    </header>
+
+    <div class="main-container">
+
+        <a href="everstainwar.html" class="back-btn">← Back</a>
+
+        <div class="profile-header">
+            <img src="images/Profile.jpg" alt="Author Profile" class="profile-avatar">
+            <div class="profile-info">
+                <h2 class="profile-name">SleepyNoob</h2>
+                <div class="profile-role">Illustrator & Manga Artist</div>
+                <div class="bio-text">
+                    I’m currently a university student. Right now, I draw manga as a hobby, but in the future, I hope to become a well-known manga artist in Japan.<br><br>
+                    The works that inspired me to start drawing manga were Naruto and Soul Eater, and my favorite anime of all time is Dragon Ball.
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">Follow Me</div>
+        <div class="social-row">
+            <a href="#" class="social-btn btn-ig">Instagram</a>
+            <a href="#" class="social-btn btn-fb">Facebook</a>
+            <a href="#" class="social-btn btn-yt">YouTube</a>
+            <a href="#" class="social-btn btn-dc">Discord</a>
+        </div>
+
+        <div class="section-title">Art Style & Genres</div>
+        <div class="genre-box">
+            <div class="genre-group">
+                <span class="genre-label">Main Genres</span>
+                <a href="shonen.html" class="tag">Shonen</a>
+                <a href="Actionfan.html" class="tag">Action Fantasy</a>
+            </div>
+            <div class="genre-group">
+                <span class="genre-label">Interested in</span>
+                <a href="#" class="tag">Horror</a>
+            </div>
+        </div>
+
+        <div class="section-title">My Works</div>
+        <div class="manga-row">
+            
+            <a href="everstainwar.html" class="manga-card">
+                <div class="cover-box">
+                    <img src="images/cover.PNG" alt="Everstain War">
+                </div>
+                <div class="manga-info">
+                    <div class="manga-title">Everstain War</div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

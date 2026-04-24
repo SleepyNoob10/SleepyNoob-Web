@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleepyNoob Platform</title>
+    <style>
+        /* Base Reset */
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Style */
+        header {
+            background-color: #000000;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ff4d4d;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #ff4d4d;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Main Container */
+        .main-container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Category Header with Yellow Bar */
+        .category-header {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-left: 4px solid #f2e205; 
+            padding-left: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Manga Grid Layout */
+        .manga-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Card Style */
+        .manga-card {
+            width: 160px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: transform 0.2s ease;
+        }
+
+        .manga-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Cover Image Box */
+        .cover-box {
+            position: relative; 
+            width: 160px;
+            height: 230px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            overflow: hidden;
+            background-color: #1a1a1a;
+        }
+
+        .cover-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Badges over Cover */
+        .badge-container {
+            position: absolute;
+            top: 4px; 
+            left: 4px; 
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* ✨ พระเอกของเราอยู่ตรงนี้! บังคับให้ป้ายกว้างเท่าตัวหนังสือ ✨ */
+            gap: 2px; 
+            z-index: 10;
+        }
+
+        .badge {
+            font-size: 7px; 
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 2px 4px; 
+            border-radius: 3px;
+            color: #fff;
+            line-height: 1; 
+        }
+
+        /* ป้าย Serialized Manga (พื้นดำโปร่งแสง) */
+        .badge-type {
+            background-color: rgba(0, 0, 0, 0.75);
+            border: 1px solid #555;
+        }
+
+        /* ป้าย Ongoing (สีเหลือง) */
+        .badge-status {
+            background-color: #f2e205;
+            color: #000;
+        }
+
+        /* Text Below Cover */
+        .manga-info {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .manga-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>SleepyNoob</h1>
+        </a>
+    </header>
+
+    <div class="main-container">
+
+        <div class="category-header">Action Fantasy</div>
+        <div class="manga-row">
+            
+            <a href="everstainwar.html" class="manga-card">
+                <div class="cover-box">
+                    <div class="badge-container">
+                        <span class="badge badge-type">Serialized Manga</span>
+                        <span class="badge badge-status">Ongoing</span>
+                    </div>
+                    <img src="images/cover.PNG" alt="Everstain War">
+                </div>
+                <div class="manga-info">
+                    <div class="manga-title">Everstain War</div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="category-header">Shonen</div>
+        <div class="manga-row">
+            
+            <a href="everstainwar.html" class="manga-card">
+                <div class="cover-box">
+                    <div class="badge-container">
+                        <span class="badge badge-type">Serialized Manga</span>
+                        <span class="badge badge-status">Ongoing</span>
+                    </div>
+                    <img src="images/cover.PNG" alt="Everstain War">
+                </div>
+                <div class="manga-info">
+                    <div class="manga-title">Everstain War</div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
